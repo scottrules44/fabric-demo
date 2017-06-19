@@ -1,0 +1,64 @@
+settings =
+{
+	iphone =
+	{
+		plist =
+        {
+		    MinimumOSVersion = "8.0",
+		    UIApplicationExitsOnSuspend = false,
+		   	Fabric = {
+		   	 	APIKey = "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx", -- replace with fabric api key
+		   	 	kits= {
+		   	 	 	{
+		   	 	 		KitInfo = {},
+		   	 			KitName = "Crashlytics"
+		   	 	 	},
+		   	 	},
+		   	},
+        },
+	},
+    android =
+    {
+    	usesPermissions =
+    	{
+        	"android.permission.INTERNET"
+    	},
+    },
+    macos =
+    {
+        plist =
+        {
+            Fabric = {
+		   	 	APIKey = "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx", -- replace with fabric api key
+		   	 	kits= {
+		   	 	 	{
+		   	 	 		KitInfo = {},
+		   	 			KitName = "Crashlytics"
+		   	 	 	},
+		   	 	},
+		   	},
+        },
+    },
+    tvos =
+    {
+     	plist =
+        {
+            Fabric = {
+		   	 	APIKey = "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx", -- replace with fabric api key
+		   	 	kits= {
+		   	 	 	{
+		   	 	 		KitInfo = {},
+		   	 			KitName = "Crashlytics"
+		   	 	 	},
+		   	 	},
+		   	},
+        },
+    },
+    plugins =
+    {
+		["plugin.fabric"] =
+    	{
+        	publisherId = "tech.scotth",
+    	},
+    },
+}
