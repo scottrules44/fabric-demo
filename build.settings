@@ -23,6 +23,15 @@ settings =
     	{
         	"android.permission.INTERNET"
     	},
+    	applicationChildElements =
+        {
+             -- replace with fabric api key
+            [[
+            	<meta-data
+          		android:name="io.fabric.ApiKey"
+          		android:value="xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx" />
+            ]],
+        }, 
     },
     macos =
     {
