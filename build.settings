@@ -32,6 +32,10 @@ settings =
           		android:value="xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx" />
             ]],
         }, 
+	strings =
+        {
+            ["com.crashlytics.android.build_id"] = "1234567890ABC", -- name what ever
+        },
     },
     macos =
     {
